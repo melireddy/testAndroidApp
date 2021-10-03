@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/SV_A_DoctorRegister"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Doctor_Register"
+
+    android:orientation="vertical"
+    android:fadeScrollbars="false"
+    android:scrollbarThumbVertical="@drawable/scroll_bar_color_trans"
+
+    android:background="@drawable/custom_trans3"
+    tools:ignore="HardcodedText">
+
+    <RelativeLayout
+        android:id="@+id/RL_A_DoctorRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/IV_A_DoctorRegister_Icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:clickable="false"
+
+            android:focusable="false"
+            android:src="@drawable/ic_account_box"></ImageView>
+
+        <TextView
+            android:id="@+id/TV_A_DoctorRegister_Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/IV_A_DoctorRegister_Icon"
+            android:layout_marginHorizontal="30dp"
+            android:layout_marginTop="-10dp"
+
+            android:clickable="false"
+            android:focusable="false"
+            android:fontFamily="@font/keania_one_regular"
+            android:gravity="center"
+            android:text="Doctor Sign Up"
+
+            android:textColor="@color/pureWhite"
+            android:textSize="30sp"></TextView>
+
+        <!--Phone number-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/IL_A_DoctorRegister_Phone"
+            style="@style/RegisterTextInputLayoutStyle"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TV_A_DoctorRegister_Title"
+            android:layout_marginTop="20dp"
+
+            android:hint="Phone Number">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtNumber"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_phone"
+
+                android:drawablePadding="10dp"
+                android:inputType="number"
+                android:textColor="@color/pureWhite"
+                android:textSize="18sp"></com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--E-mail-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/IL_A_DoctorRegister_Email"
+            style="@style/RegisterTextInputLayoutStyle"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/IL_A_DoctorRegister_Phone"
+
+            android:hint="E-mail">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_email"
+
+                android:drawablePadding="10dp"
+                android:inputType="text"
+                android:textColor="@color/pureWhite"
+                android:textSize="18sp"></com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Password-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Il_A_DoctorRegister_Password"
+            style="@style/RegisterTextInputLayoutStyle"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/IL_A_DoctorRegister_Email"
+
+            android:hint="Password">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtPass"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_lock"
+
+                android:drawablePadding="10dp"
+                android:inputType="text"
+                android:textColor="@color/pureWhite"
+                android:textSize="18sp"></com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--First Name-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Il_A_DoctorRegister_FirstName"
+            style="@style/RegisterTextInputLayoutStyle"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Il_A_DoctorRegister_Password"
+
+            android:hint="First Name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtName"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+
+                android:drawableStart="@drawable/ic_person"
+                android:drawablePadding="10dp"
+                android:inputType="text"
+                android:textColor="@color/pureWhite"
+                android:textSize="18sp"></com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--last Name-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Il_A_DoctorRegister_LastName"
+            style="@style/RegisterTextInputLayoutStyle"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Il_A_DoctorRegister_FirstName"
+
+            android:hint="Last Name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtSurname"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+
+                android:drawableStart="@drawable/ic_person2"
+                android:drawablePadding="10dp"
+                android:inputType="text"
+                android:textColor="@color/pureWhite"
+                android:textSize="18sp"></com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--ID-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Il_A_DoctorRegister_ID"
+            style="@style/RegisterTextInputLayoutStyle"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Il_A_DoctorRegister_LastName"
+
+            android:hint="ID">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtID"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_profile2"
+
+                android:drawablePadding="10dp"
+                android:inputType="number"
+                android:textColor="@color/pureWhite"
+                android:textSize="18sp"></com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Fields-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/IL_A_DoctorRegister_Fields"
+            style="@style/DropDownInpitlayoutStyle"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Il_A_DoctorRegister_ID"
+
+            android:hint="Fields">
+
+            <AutoCompleteTextView
+                android:id="@+id/TV_A_DoctorRegister_Fields"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:drawableStart="@drawable/ic_medical"
+                android:drawablePadding="10dp"
+
+                android:inputType="none"
+                android:textColor="@color/pureWhite"
+                android:textSize="18sp"></AutoCompleteTextView>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Qualifications-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/IL_A_DoctorRegister_Qualifications"
+            style="@style/RegisterTextInputLayoutStyle"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/IL_A_DoctorRegister_Fields"
+            android:hint="Qualifications"
+
+            app:counterEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtQual"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_book"
+
+                android:drawablePadding="10dp"
+                android:inputType="text"
+                android:textColor="@color/pureWhite"
+                android:textSize="18sp"></com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--Years of experience-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/IL_A_DoctorRegister_Years"
+            style="@style/RegisterTextInputLayoutStyle"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/IL_A_DoctorRegister_Qualifications"
+            android:hint="Years of Experience"
+
+            app:counterEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edtExp"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_time"
+
+                android:drawablePadding="10dp"
+                android:inputType="text"
+                android:textColor="@color/pureWhite"
+                android:textSize="18sp"></com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--        Confirm-->
+        <Button
+            android:id="@+id/B_A_DoctorRegister_Confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/IL_A_DoctorRegister_Years"
+            android:layout_marginHorizontal="100dp"
+            android:fontFamily="@font/keania_one_regular"
+
+            android:onClick="confirmDetails"
+            android:text="Confirm"
+            android:textColor="@color/pureWhite"
+            android:textSize="20sp"></Button>
+
+        <!--        Back-->
+        <Button
+            android:id="@+id/B_A_DoctorRegister_Back"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@id/B_A_DoctorRegister_Confirm"
+            android:layout_marginHorizontal="100dp"
+
+            android:fontFamily="@font/keania_one_regular"
+            android:text="Back"
+            android:textColor="@color/pureWhite"
+            android:textSize="20sp"></Button>
+
+    </RelativeLayout>
+
+</ScrollView>
