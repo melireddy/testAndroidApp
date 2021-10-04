@@ -22,11 +22,11 @@ android {
     flavorDimensions "version"
     productFlavors {
         free {
-            applicationId 'com.dicedmelon.example.android.free'
+            applicationId "com.hiya:jacoco-android:0.2"
             dimension "version"
         }
         paid {
-            applicationId 'com.dicedmelon.example.android'
+            applicationId "com.hiya:jacoco-android:0.2"
             dimension "version"
         }
     }
