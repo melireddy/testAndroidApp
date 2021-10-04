@@ -10,7 +10,4 @@ buildscript {
   }
 }
 apply plugin: 'jacoco-android'
-jacocoAndroidUnitTestReport {
-  jacocoExcludes += [ '**/AutoValue*.class' ]
-}
 
