@@ -24,12 +24,3 @@ ext {
   supportTest = [espressoCore: 'com.android.support.test.espresso:espresso-core:2.2.2',
                  rules       : 'com.android.support.test:rules:0.5']
 }
-
-allprojects {
-  repositories {
-    google()
-    maven { url 'https://plugins.gradle.org/m2/' }
-  }
-
-  project.version = '0.1.0'
-}
