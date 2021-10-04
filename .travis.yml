@@ -1,10 +1,9 @@
-
-sudo: false
 language: android
-jdk: oraclejdk11
+jdk: oraclejdk8
 
 before_install:
  - chmod +x gradlew
+ 
 env:
   global:
     - ANDROID_TARGET=android-22
@@ -27,5 +26,3 @@ script:
   - ./gradlew connectedCheck
 after_success:
   - bash <(curl -s https://codecov.io/bash)
-
-
