@@ -6,5 +6,6 @@ buildscript {
   dependencies {
     classpath 'com.android.tools.build:gradle:4.2.0'
     classpath 'com.dicedmelon.gradle:jacoco-android:0.1.5'
+    classpath 'com.google.gms:google-services:4.3.10'
   }
 }
