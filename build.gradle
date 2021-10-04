@@ -19,10 +19,7 @@ task clean(type: Delete) {
     delete rootProject.buildDir
 }
 
-plugins {
-    id 'com.android.application'
-
-}
+apply plugin: 'com.android.application'
 //apply plugin: 'com.google.gms.google-services'
 //apply plugin: "com.hiya.jacoco-android"
 apply plugin:'base'
