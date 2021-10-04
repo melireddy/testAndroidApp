@@ -9,5 +9,5 @@ buildscript {
     classpath 'com.google.gms:google-services:4.3.10'
   }
 }
-apply plugin: 'jacoco-android'
+apply plugin: 'com.dicedmelon.gradle:jacoco-android:0.1.5'
 
