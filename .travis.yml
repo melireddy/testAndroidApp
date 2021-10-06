@@ -36,5 +36,5 @@ after_success:
   ci_env='bash <(curl -s https://codecov.io/env)'
   docker run $ci_env ...
   |----- inside docker container
-  | # exec tests
+  | exec tests
   | bash <(curl -s https://codecov.io/bash)
