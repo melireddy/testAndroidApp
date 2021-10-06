@@ -3,7 +3,8 @@ language: android
 dist: trusty
 jdk: oraclejdk8
 
-
+before_install:
+-chmod +x gradlew
 env:
   global:
   - ANDROID_TARGET=android-22
