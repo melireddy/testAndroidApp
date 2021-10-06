@@ -17,10 +17,7 @@ coverage:
         flags: 
           - unit
         paths: 
-          - "src"
-       # advanced
-#         branches: 
-#           - master
+          - "app"
         if_not_found: success
         if_ci_failed: error
         informational: false
